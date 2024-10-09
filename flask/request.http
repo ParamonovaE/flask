@@ -1,0 +1,36 @@
+
+POST http://127.0.0.1:5000/create_user
+Content-Type: application/json
+
+{
+  "username": "Светлана"
+}
+
+###
+
+POST http://127.0.0.1:5000/ads/
+Content-Type: application/json
+
+{
+    "title": "Продажа компьютера",
+    "description": "Компьютер в отличном состоянии",
+    "owner_id": 1
+}
+
+###
+
+GET http://127.0.0.1:5000/ads/1
+
+###
+
+PATCH http://127.0.0.1:5000/ads/1
+Content-Type: application/json
+
+{
+    "description": "Ноутбук в идеальном состоянии"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/ads/1
+
